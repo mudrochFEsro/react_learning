@@ -1,11 +1,14 @@
-import React, { Component } from "react";
-import Dog from "./Dog";
+
 import './App.css';
+import Pokedex from "./Pokedex";
 
 function App() {
+  const defultProps ={
+
+  }
   return (
     <div className="App">
-     <Dog/>
+     <Pokedex/>
     </div>
   );
 }
