@@ -3,11 +3,9 @@ import './App.css';
 import Pokedex from "./Pokedex";
 
 function App() {
-  const defultProps ={
-
-  }
   return (
-    <div className="App">
+    <div className='App'>
+        <h1 className='App-header' >PokeDex</h1>
      <Pokedex/>
     </div>
   );
