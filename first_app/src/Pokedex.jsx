@@ -12,14 +12,16 @@ function Pokedex() {
         {id: 94, name: 'Gengar', type: 'psychic', base_experience: 225},
         {id: 133, name: 'Eevee', type: 'normal', base_experience: 65},
     ]
-
+    const PokeImageURL = (defaultProp) =>{
+        return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${defaultProp.id}.png`
+    }
     return (
         <div className="Pokedex">
             {defaultProps.map(defaultProp =>
                 <Pokecard
                     key={defaultProp.id}
                     name={defaultProp.name}
-                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${defaultProp.id}.png`}
+                    src={PokeImageURL(defaultProp)}
                     alt={defaultProp.name}
                     type={defaultProp.type}
                     base_experience={defaultProp.base_experience}
