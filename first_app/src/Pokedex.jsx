@@ -2,7 +2,7 @@ import Pokecard from "./Pokecard";
 import './Pokedex.css';
 
 function Pokedex() {
-    const defultProps = [
+    const defaultProps = [
         {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
         {id: 7, name: 'Squirtle', type: 'water', base_experience: 63},
         {id: 11, name: 'Metapod', type: 'leaf', base_experience: 72},
@@ -15,7 +15,7 @@ function Pokedex() {
 
     return (
         <div className="Pokedex">
-            {defultProps.map(defaultProp =>
+            {defaultProps.map(defaultProp =>
                 <Pokecard
                     key={defaultProp.id}
                     name={defaultProp.name}
