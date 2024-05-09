@@ -4,7 +4,7 @@ import './Pokedex.css';
 
 class Pokedex extends Component {
     render() {
-        let title = <p className={this.props.isWinner ? 'Pokedex-winner' : 'Pokedex-loser'}>{this.props.isWinner ? 'WINNER!' : 'LOSER!'}</p>
+        let title;
         if (this.props.isWinner) {
             title = <h1 className='Pokedex-winner'>Winning Hand</h1>
         } else {
