@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
 
 class BrokenClick extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            clicked: false
-        }
-        this.handleClick = this.handleClick.bind(this);
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         clicked: false
+    //     }
+    //     this.handleClick = this.handleClick.bind(this);
+    // }
 
-    handleClick(e) {
-        this.setState({ clicked: true });
+
+    state = {
+        clicked: false
+    }
+    handleClick = (e) => {
+        this.setState({clicked: true});
     }
 
     render() {
