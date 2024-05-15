@@ -23,3 +23,6 @@
     background-color:#00483d;
     cursor: pointer;
 }
+.RollDice .disabled:hover{
+    cursor: not-allowed;
+}
