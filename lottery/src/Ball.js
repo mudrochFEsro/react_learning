@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import 'Ball.css'
+import './Ball.css'
 class Ball extends Component {
     render() {
         return(
