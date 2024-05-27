@@ -1,4 +1,14 @@
-.hide{
+.Flip .hide{
     visibility: hidden;
     display: none;
+}
+.Flip button{
+    margin-top: 16px;
+    font-family: "Courier New";
+    font-size: 24px;
+    background-color: #00483d;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 4px;
+    font-weight: 600;
 }

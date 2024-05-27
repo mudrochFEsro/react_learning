@@ -1,3 +1,8 @@
 .Coin img{
-    width: 20%;
+    width: 100%;
+    max-width: 80%;
+}
+.Coin .hide{
+    visibility: hidden;
+    display: none;
 }
