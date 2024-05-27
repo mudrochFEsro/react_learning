@@ -1,14 +1,16 @@
 import React, {Component} from "react";
 import './Text.css'
+
 class Text extends Component {
     render() {
-        let total = this.props.trumpFlips + this.props.kangarooFlips
+        let {trumpFlips, kangarooFlips} = this.props;
+        let total = trumpFlips + kangarooFlips
         return (
             <div className='Text'>
                 <p>
-                    Trump head count: {this.props.trumpFlips}
+                    Trump head count: {trumpFlips}
                     <br/>
-                    Kangaroo head count: {this.props.kangarooFlips}
+                    Kangaroo head count: {kangarooFlips}
                     <br/>
                     Total flips: {total}
                 </p>
