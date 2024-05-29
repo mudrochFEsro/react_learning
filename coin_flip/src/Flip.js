@@ -16,7 +16,7 @@ class Flip extends Component {
 
     flip() {
         let randNum = Math.floor(Math.random() * 2) + 1;
-        this.setState((prevState) => ({
+        this.setState(prevState => ({
             flipped: randNum,
             trumpCount: randNum === 1 ? prevState.trumpCount + 1 : prevState.trumpCount,
             kangarooCount: randNum === 2 ? prevState.kangarooCount + 1 : prevState.kangarooCount
