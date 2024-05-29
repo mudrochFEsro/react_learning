@@ -1,0 +1,9 @@
+.BoxContainer {
+   width: 100vw;
+    flex-wrap: wrap;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+
+}
