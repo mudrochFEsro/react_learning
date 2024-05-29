@@ -44,6 +44,7 @@ class Flip extends Component {
     render() {
         return (
             <div className='Flip'>
+                <h1>Flip the coin!</h1>
                 <Coin
                     side={this.state.flipped}
                 />
