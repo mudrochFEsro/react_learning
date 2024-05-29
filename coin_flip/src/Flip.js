@@ -7,7 +7,7 @@ class Flip extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            flipped: 0,
+            coinSide: 0,
             trumpCount: 0,
             kangarooCount: 0
         };
@@ -17,7 +17,7 @@ class Flip extends Component {
     flip() {
         let randNum = Math.floor(Math.random() * 2) + 1;
         this.setState(prevState => ({
-            flipped: randNum,
+            coinSide: randNum,
             trumpCount: randNum === 1 ? prevState.trumpCount + 1 : prevState.trumpCount,
             kangarooCount: randNum === 2 ? prevState.kangarooCount + 1 : prevState.kangarooCount
         }))
@@ -46,7 +46,7 @@ class Flip extends Component {
             <div className='Flip'>
                 <h1>Flip the coin!</h1>
                 <Coin
-                    side={this.state.flipped}
+                    side={this.state.coinSide}
                 />
                 <Text
                     trumpFlips={this.state.trumpCount}
